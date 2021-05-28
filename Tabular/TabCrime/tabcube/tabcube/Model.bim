@@ -1,0 +1,261 @@
+{
+  "name": "SemanticModel",
+  "compatibilityLevel": 1500,
+  "model": {
+    "culture": "fr-FR",
+    "dataSources": [
+      {
+        "type": "structured",
+        "name": "SQL/HAROUN\\DEMO;Crime",
+        "connectionDetails": {
+          "protocol": "tds",
+          "address": {
+            "server": "HAROUN\\DEMO",
+            "database": "Crime"
+          },
+          "authentication": null,
+          "query": null
+        },
+        "options": {},
+        "credential": {
+          "AuthenticationKind": "Windows",
+          "kind": "SQL",
+          "path": "haroun\\demo;Crime",
+          "Username": "HAROUN\\harou",
+          "EncryptConnection": false
+        }
+      }
+    ],
+    "tables": [
+      {
+        "name": "Crime DimCity",
+        "columns": [
+          {
+            "name": "CityID",
+            "dataType": "int64",
+            "sourceColumn": "CityID"
+          },
+          {
+            "name": "City",
+            "dataType": "string",
+            "sourceColumn": "City"
+          },
+          {
+            "name": "StateID",
+            "dataType": "int64",
+            "sourceColumn": "StateID"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/HAROUN\\DEMO;Crime\",",
+                "    Crime_DimCity = Source{[Schema=\"Crime\",Item=\"DimCity\"]}[Data]",
+                "in",
+                "    Crime_DimCity"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Crime DimState",
+        "columns": [
+          {
+            "name": "StateID",
+            "dataType": "int64",
+            "sourceColumn": "StateID"
+          },
+          {
+            "name": "State",
+            "dataType": "string",
+            "sourceColumn": "State"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/HAROUN\\DEMO;Crime\",",
+                "    Crime_DimState = Source{[Schema=\"Crime\",Item=\"DimState\"]}[Data]",
+                "in",
+                "    Crime_DimState"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Crime FactCrime",
+        "columns": [
+          {
+            "name": "CrimeID",
+            "dataType": "int64",
+            "sourceColumn": "CrimeID"
+          },
+          {
+            "name": "Source_RowID",
+            "dataType": "int64",
+            "sourceColumn": "Source_RowID"
+          },
+          {
+            "name": "CityID",
+            "dataType": "int64",
+            "sourceColumn": "CityID"
+          },
+          {
+            "name": "YearID",
+            "dataType": "int64",
+            "sourceColumn": "YearID"
+          },
+          {
+            "name": "Population",
+            "dataType": "int64",
+            "sourceColumn": "Population"
+          },
+          {
+            "name": "ViolentCrime",
+            "dataType": "int64",
+            "sourceColumn": "ViolentCrime"
+          },
+          {
+            "name": "MurderAndNonEgligentManslaughter",
+            "dataType": "int64",
+            "sourceColumn": "MurderAndNonEgligentManslaughter"
+          },
+          {
+            "name": "ForcibleRape",
+            "dataType": "int64",
+            "sourceColumn": "ForcibleRape"
+          },
+          {
+            "name": "Robbery",
+            "dataType": "int64",
+            "sourceColumn": "Robbery"
+          },
+          {
+            "name": "AggravatedAssault",
+            "dataType": "int64",
+            "sourceColumn": "AggravatedAssault"
+          },
+          {
+            "name": "PropertyCrime",
+            "dataType": "int64",
+            "sourceColumn": "PropertyCrime"
+          },
+          {
+            "name": "Buglary",
+            "dataType": "int64",
+            "sourceColumn": "Buglary"
+          },
+          {
+            "name": "LarcenyTheft",
+            "dataType": "int64",
+            "sourceColumn": "LarcenyTheft"
+          },
+          {
+            "name": "MotorVehicleTheft",
+            "dataType": "int64",
+            "sourceColumn": "MotorVehicleTheft"
+          },
+          {
+            "name": "Arson",
+            "dataType": "int64",
+            "sourceColumn": "Arson"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/HAROUN\\DEMO;Crime\",",
+                "    Crime_FactCrime = Source{[Schema=\"Crime\",Item=\"FactCrime\"]}[Data]",
+                "in",
+                "    Crime_FactCrime"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Crime DimTime",
+        "columns": [
+          {
+            "name": "YearID",
+            "dataType": "int64",
+            "sourceColumn": "YearID"
+          },
+          {
+            "name": "Year",
+            "dataType": "int64",
+            "sourceColumn": "Year"
+          },
+          {
+            "name": "ChineseNewYear",
+            "dataType": "string",
+            "sourceColumn": "ChineseNewYear"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/HAROUN\\DEMO;Crime\",",
+                "    Crime_DimTime = Source{[Schema=\"Crime\",Item=\"DimTime\"]}[Data]",
+                "in",
+                "    Crime_DimTime"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "f2a94e70-2046-47f5-99ac-cc160a09f52c",
+        "fromTable": "Crime DimCity",
+        "fromColumn": "StateID",
+        "toTable": "Crime DimState",
+        "toColumn": "StateID"
+      },
+      {
+        "name": "e0226ad4-faa0-4b3d-89c1-6fd14306196a",
+        "fromTable": "Crime FactCrime",
+        "fromColumn": "CityID",
+        "toTable": "Crime DimCity",
+        "toColumn": "CityID"
+      },
+      {
+        "name": "cfde0aba-fc49-4f68-9d79-a05ff5efff45",
+        "fromTable": "Crime FactCrime",
+        "fromColumn": "YearID",
+        "toTable": "Crime DimTime",
+        "toColumn": "YearID"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "ClientCompatibilityLevel",
+        "value": "600"
+      }
+    ]
+  },
+  "id": "SemanticModel"
+}

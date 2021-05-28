@@ -1,0 +1,7 @@
+D:\data\crime\Tabular\TabCrime\tabcube\tabcube\bin\Model.asdatabase
+D:\data\crime\Tabular\TabCrime\tabcube\tabcube\bin\Model.deploymenttargets
+D:\data\crime\Tabular\TabCrime\tabcube\tabcube\bin\Model.deploymentoptions
+D:\data\crime\Tabular\TabCrime\tabcube\tabcube\obj\Development\tabcube.smproj.CoreCompileInputs.cache
+D:\data\crime\Tabular\TabCrime\tabcube\tabcube\obj\Development\Model.asdatabase
+D:\data\crime\Tabular\TabCrime\tabcube\tabcube\obj\Development\Model.deploymentoptions
+D:\data\crime\Tabular\TabCrime\tabcube\tabcube\obj\Development\Model.deploymenttargets

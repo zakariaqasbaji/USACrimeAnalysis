@@ -1,0 +1,318 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c2d9dcbd-a3e7-419e-9250-f7b31767e611" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>CrimeDSV</ID>
+  <Name>CrimeDSV</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>CrimeDS</DataSourceID>
+  <Schema>
+    <xs:schema id="CrimeDSV" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="CrimeDSV" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="dc0bde71-319a-4a45-aa41-c30c050e251a">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Crime_DimCity" msprop:design-time-name="f84789ec-057d-4101-a05a-f8409e31ff02" msprop:DbTableName="DimCity" msprop:FriendlyName="DimCity" msprop:DbSchemaName="Crime" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CityID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="ce8c1f6f-5500-4800-88e9-3cf0922a320d" msprop:DbColumnName="CityID" msprop:FriendlyName="CityID" type="xs:int" />
+                  <xs:element name="City" msprop:design-time-name="21c69c51-2cde-4462-b436-b726a915b5ff" msprop:DbColumnName="City" msprop:FriendlyName="City" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="StateID" msprop:design-time-name="ded96674-7039-41af-b02d-54b957d5ecd7" msprop:DbColumnName="StateID" msprop:FriendlyName="StateID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Crime_DimDate" msprop:design-time-name="dcfb0e1d-7d7c-4d3e-8ed6-5785937c6f28" msprop:DbTableName="DimDate" msprop:FriendlyName="DimDate" msprop:DbSchemaName="Crime" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="YearID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="b3ce5d5a-e7b6-48e0-8682-47a9229b3f16" msprop:DbColumnName="YearID" msprop:FriendlyName="YearID" type="xs:int" />
+                  <xs:element name="Year" msprop:design-time-name="aec27ea6-67db-4532-96ea-dab1d1365466" msprop:DbColumnName="Year" msprop:FriendlyName="Year" type="xs:int" minOccurs="0" />
+                  <xs:element name="ChineseNewYear" msprop:design-time-name="48694b7c-5a8e-46b3-a8bc-285b3900d617" msprop:DbColumnName="ChineseNewYear" msprop:FriendlyName="ChineseNewYear" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Crime_DimState" msprop:design-time-name="164a24db-54f1-42ea-9fbd-1fa31ec67787" msprop:DbTableName="DimState" msprop:FriendlyName="DimState" msprop:DbSchemaName="Crime" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="StateID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="31e79e21-9944-465a-b7d6-579232dc98d9" msprop:DbColumnName="StateID" msprop:FriendlyName="StateID" type="xs:int" />
+                  <xs:element name="State" msprop:design-time-name="390804ab-8053-45cd-983f-59fed0319beb" msprop:DbColumnName="State" msprop:FriendlyName="State" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Crime_FactCrime" msprop:design-time-name="522a035f-a4ad-48dc-bdb0-185baa345ec3" msprop:DbTableName="FactCrime" msprop:FriendlyName="FactCrime" msprop:DbSchemaName="Crime" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CrimeID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="4018044d-3a41-4fe7-bf5c-2d6df21e6d4c" msprop:DbColumnName="CrimeID" msprop:FriendlyName="CrimeID" type="xs:int" />
+                  <xs:element name="Source_RowID" msprop:design-time-name="f65b4cbd-5949-49c0-b3d5-bbd875d389f4" msprop:DbColumnName="Source_RowID" msprop:FriendlyName="Source_RowID" type="xs:int" minOccurs="0" />
+                  <xs:element name="CityID" msprop:design-time-name="1148c6b7-7a05-4443-b21e-d0fc4f1ee22a" msprop:DbColumnName="CityID" msprop:FriendlyName="CityID" type="xs:int" minOccurs="0" />
+                  <xs:element name="YearID" msprop:design-time-name="ca40a4dd-c28d-4e9a-89df-3a07cea7d995" msprop:DbColumnName="YearID" msprop:FriendlyName="YearID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Population" msprop:design-time-name="8caf7430-fd6e-4bc7-9d4f-2c67f698ffdd" msprop:DbColumnName="Population" msprop:FriendlyName="Population" type="xs:int" minOccurs="0" />
+                  <xs:element name="ViolentCrime" msprop:design-time-name="8ee0181b-3754-46aa-81fb-30292acf0de0" msprop:DbColumnName="ViolentCrime" msprop:FriendlyName="ViolentCrime" type="xs:int" minOccurs="0" />
+                  <xs:element name="MurderAndNonEgligentManslaughter" msprop:design-time-name="839c9dfe-d705-49dc-bbf8-7d84641401a8" msprop:DbColumnName="MurderAndNonEgligentManslaughter" msprop:FriendlyName="MurderAndNonEgligentManslaughter" type="xs:int" minOccurs="0" />
+                  <xs:element name="ForcibleRape" msprop:design-time-name="0879d2aa-aec4-419f-87d7-2937b96cae53" msprop:DbColumnName="ForcibleRape" msprop:FriendlyName="ForcibleRape" type="xs:int" minOccurs="0" />
+                  <xs:element name="Robbery" msprop:design-time-name="6fcce04d-4d3c-4efb-91f5-2f876ea6e4f8" msprop:DbColumnName="Robbery" msprop:FriendlyName="Robbery" type="xs:int" minOccurs="0" />
+                  <xs:element name="AggravatedAssault" msprop:design-time-name="fb98444a-b496-4131-98df-cc9320a83066" msprop:DbColumnName="AggravatedAssault" msprop:FriendlyName="AggravatedAssault" type="xs:int" minOccurs="0" />
+                  <xs:element name="PropertyCrime" msprop:design-time-name="7108d947-7ac1-4350-9c65-b39c6fd1cdd0" msprop:DbColumnName="PropertyCrime" msprop:FriendlyName="PropertyCrime" type="xs:int" minOccurs="0" />
+                  <xs:element name="Buglary" msprop:design-time-name="471d8ce2-fa72-4985-be27-13a24a3fe745" msprop:DbColumnName="Buglary" msprop:FriendlyName="Buglary" type="xs:int" minOccurs="0" />
+                  <xs:element name="LarcenyTheft" msprop:design-time-name="2c5bed7b-c025-4929-8858-4272dbebac4e" msprop:DbColumnName="LarcenyTheft" msprop:FriendlyName="LarcenyTheft" type="xs:int" minOccurs="0" />
+                  <xs:element name="MotorVehicleTheft" msprop:design-time-name="80527301-7b9f-42c2-8123-1c20dcd156dd" msprop:DbColumnName="MotorVehicleTheft" msprop:FriendlyName="MotorVehicleTheft" type="xs:int" minOccurs="0" />
+                  <xs:element name="Arson" msprop:design-time-name="599a897c-a0dc-4bb7-836b-7d55bea8c8f5" msprop:DbColumnName="Arson" msprop:FriendlyName="Arson" type="xs:int" minOccurs="0" />
+                  <xs:element name="PK_Date" msprop:design-time-name="45f6da91-aa66-4b66-8df3-99155c1e370f" msprop:DbColumnName="PK_Date" msprop:FriendlyName="PK_Date" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Time" msprop:design-time-name="dbd86639-e89e-45d7-8eee-788327b29aa1" msprop:DbTableName="Time" msprop:FriendlyName="Time" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PK_Date" msprop:design-time-name="05163ac1-f80b-47c5-ac91-9a1c12c2a9c4" msprop:DbColumnName="PK_Date" msprop:FriendlyName="PK_Date" type="xs:dateTime" />
+                  <xs:element name="Date_Name" msprop:design-time-name="dd22ba32-6417-4ec6-a0ba-990446eacaf8" msprop:DbColumnName="Date_Name" msprop:FriendlyName="Date_Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Year" msprop:design-time-name="78c88d5e-cf53-46bc-aa90-cefbef28c061" msprop:DbColumnName="Year" msprop:FriendlyName="Year" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Year_Name" msprop:design-time-name="e13f475f-b472-4ca6-a278-b21012a6f88e" msprop:DbColumnName="Year_Name" msprop:FriendlyName="Year_Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Half_Year" msprop:design-time-name="ccd828c3-9350-4fbb-874b-636babe59896" msprop:DbColumnName="Half_Year" msprop:FriendlyName="Half_Year" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Half_Year_Name" msprop:design-time-name="23323460-fa7e-4b27-b627-25039a6ad4ee" msprop:DbColumnName="Half_Year_Name" msprop:FriendlyName="Half_Year_Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Quarter" msprop:design-time-name="72e9fad0-c459-4f2a-bf29-e1026d32c481" msprop:DbColumnName="Quarter" msprop:FriendlyName="Quarter" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Quarter_Name" msprop:design-time-name="e7e0c2e3-d143-4da7-8b1e-85aab52e4bae" msprop:DbColumnName="Quarter_Name" msprop:FriendlyName="Quarter_Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Day_Of_Year" msprop:design-time-name="8c79c247-f714-4cc1-8ce5-cda71a09c0a0" msprop:DbColumnName="Day_Of_Year" msprop:FriendlyName="Day_Of_Year" type="xs:int" minOccurs="0" />
+                  <xs:element name="Day_Of_Year_Name" msprop:design-time-name="a0fe1ab6-b396-47e6-a0ca-fd968538a386" msprop:DbColumnName="Day_Of_Year_Name" msprop:FriendlyName="Day_Of_Year_Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Day_Of_Half_Year" msprop:design-time-name="4822c206-eb6e-40c5-ad70-d47dcc4ceccd" msprop:DbColumnName="Day_Of_Half_Year" msprop:FriendlyName="Day_Of_Half_Year" type="xs:int" minOccurs="0" />
+                  <xs:element name="Day_Of_Half_Year_Name" msprop:design-time-name="9c290981-6b4f-4e2b-99d3-0ca8afaeb5d8" msprop:DbColumnName="Day_Of_Half_Year_Name" msprop:FriendlyName="Day_Of_Half_Year_Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Day_Of_Quarter" msprop:design-time-name="d0076942-0f06-4fd8-9d4c-d814df41beca" msprop:DbColumnName="Day_Of_Quarter" msprop:FriendlyName="Day_Of_Quarter" type="xs:int" minOccurs="0" />
+                  <xs:element name="Day_Of_Quarter_Name" msprop:design-time-name="817390f2-144f-4382-9cd4-106e292afdb2" msprop:DbColumnName="Day_Of_Quarter_Name" msprop:FriendlyName="Day_Of_Quarter_Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Quarter_Of_Year" msprop:design-time-name="33c2d36a-2cc7-404c-9b2f-794faede75ac" msprop:DbColumnName="Quarter_Of_Year" msprop:FriendlyName="Quarter_Of_Year" type="xs:int" minOccurs="0" />
+                  <xs:element name="Quarter_Of_Year_Name" msprop:design-time-name="7e7569ff-2f7c-432d-813a-6a3df7b412ab" msprop:DbColumnName="Quarter_Of_Year_Name" msprop:FriendlyName="Quarter_Of_Year_Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Quarter_Of_Half_Year" msprop:design-time-name="48ed9748-51df-4a89-aa49-712bf31d9ba7" msprop:DbColumnName="Quarter_Of_Half_Year" msprop:FriendlyName="Quarter_Of_Half_Year" type="xs:int" minOccurs="0" />
+                  <xs:element name="Quarter_Of_Half_Year_Name" msprop:design-time-name="4b51c276-d48d-4852-a503-4df3a94630a2" msprop:DbColumnName="Quarter_Of_Half_Year_Name" msprop:FriendlyName="Quarter_Of_Half_Year_Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Half_Year_Of_Year" msprop:design-time-name="da334aaf-3ed5-416a-aac0-7f0bb121bd7d" msprop:DbColumnName="Half_Year_Of_Year" msprop:FriendlyName="Half_Year_Of_Year" type="xs:int" minOccurs="0" />
+                  <xs:element name="Half_Year_Of_Year_Name" msprop:design-time-name="5f321e95-573c-4585-85a9-2deeaac0030b" msprop:DbColumnName="Half_Year_Of_Year_Name" msprop:FriendlyName="Half_Year_Of_Year_Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fiscal_Year" msprop:design-time-name="0e754af6-7c90-40e5-b80c-d8ddb2203b91" msprop:DbColumnName="Fiscal_Year" msprop:FriendlyName="Fiscal_Year" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Fiscal_Year_Name" msprop:design-time-name="9d9a7d1c-cd4d-4c14-9927-5747345ebd2a" msprop:DbColumnName="Fiscal_Year_Name" msprop:FriendlyName="Fiscal_Year_Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fiscal_Half_Year" msprop:design-time-name="7f160cfe-cb71-4be0-b1f3-0059321a3bf8" msprop:DbColumnName="Fiscal_Half_Year" msprop:FriendlyName="Fiscal_Half_Year" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Fiscal_Half_Year_Name" msprop:design-time-name="7fde076c-410a-4fd4-9726-cd0b883167ea" msprop:DbColumnName="Fiscal_Half_Year_Name" msprop:FriendlyName="Fiscal_Half_Year_Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fiscal_Quarter" msprop:design-time-name="dc162c5f-2b27-46d4-ab72-184dbc84eac6" msprop:DbColumnName="Fiscal_Quarter" msprop:FriendlyName="Fiscal_Quarter" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Fiscal_Quarter_Name" msprop:design-time-name="37617337-a588-4658-aeca-4fc8cb650ad6" msprop:DbColumnName="Fiscal_Quarter_Name" msprop:FriendlyName="Fiscal_Quarter_Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fiscal_Day" msprop:design-time-name="acdbe933-053c-4d59-9834-eabc718d5a1f" msprop:DbColumnName="Fiscal_Day" msprop:FriendlyName="Fiscal_Day" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Fiscal_Day_Name" msprop:design-time-name="23795755-7e23-4cff-9818-e6da0992cc9c" msprop:DbColumnName="Fiscal_Day_Name" msprop:FriendlyName="Fiscal_Day_Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fiscal_Day_Of_Year" msprop:design-time-name="5a7519fe-7c42-4972-90fd-3596096e87b0" msprop:DbColumnName="Fiscal_Day_Of_Year" msprop:FriendlyName="Fiscal_Day_Of_Year" type="xs:int" minOccurs="0" />
+                  <xs:element name="Fiscal_Day_Of_Year_Name" msprop:design-time-name="a307b0cd-ed56-4f5d-8dc7-976b164aaf7b" msprop:DbColumnName="Fiscal_Day_Of_Year_Name" msprop:FriendlyName="Fiscal_Day_Of_Year_Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fiscal_Day_Of_Half_Year" msprop:design-time-name="e836c03a-d40f-4e85-8a3f-697aa46ca4b1" msprop:DbColumnName="Fiscal_Day_Of_Half_Year" msprop:FriendlyName="Fiscal_Day_Of_Half_Year" type="xs:int" minOccurs="0" />
+                  <xs:element name="Fiscal_Day_Of_Half_Year_Name" msprop:design-time-name="c31d7aff-9a2d-4de2-9753-0bc1894042fb" msprop:DbColumnName="Fiscal_Day_Of_Half_Year_Name" msprop:FriendlyName="Fiscal_Day_Of_Half_Year_Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fiscal_Day_Of_Quarter" msprop:design-time-name="cad6a737-e43d-4497-a1ad-4312385472c5" msprop:DbColumnName="Fiscal_Day_Of_Quarter" msprop:FriendlyName="Fiscal_Day_Of_Quarter" type="xs:int" minOccurs="0" />
+                  <xs:element name="Fiscal_Day_Of_Quarter_Name" msprop:design-time-name="ddca98b5-65f1-4164-941a-f2681d0fb32c" msprop:DbColumnName="Fiscal_Day_Of_Quarter_Name" msprop:FriendlyName="Fiscal_Day_Of_Quarter_Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fiscal_Quarter_Of_Year" msprop:design-time-name="40a79eab-1cca-4e33-a776-eeae22a7ccda" msprop:DbColumnName="Fiscal_Quarter_Of_Year" msprop:FriendlyName="Fiscal_Quarter_Of_Year" type="xs:int" minOccurs="0" />
+                  <xs:element name="Fiscal_Quarter_Of_Year_Name" msprop:design-time-name="47319477-c86b-4ee4-b5d0-e734270d62e5" msprop:DbColumnName="Fiscal_Quarter_Of_Year_Name" msprop:FriendlyName="Fiscal_Quarter_Of_Year_Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fiscal_Quarter_Of_Half_Year" msprop:design-time-name="078dfc6e-d473-4ca6-867e-15625e906784" msprop:DbColumnName="Fiscal_Quarter_Of_Half_Year" msprop:FriendlyName="Fiscal_Quarter_Of_Half_Year" type="xs:int" minOccurs="0" />
+                  <xs:element name="Fiscal_Quarter_Of_Half_Year_Name" msprop:design-time-name="3ecc57a6-6c0a-401e-8cae-1ea28c34d036" msprop:DbColumnName="Fiscal_Quarter_Of_Half_Year_Name" msprop:FriendlyName="Fiscal_Quarter_Of_Half_Year_Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fiscal_Half_Year_Of_Year" msprop:design-time-name="28267ac6-7818-4508-8fba-71d7f5188214" msprop:DbColumnName="Fiscal_Half_Year_Of_Year" msprop:FriendlyName="Fiscal_Half_Year_Of_Year" type="xs:int" minOccurs="0" />
+                  <xs:element name="Fiscal_Half_Year_Of_Year_Name" msprop:design-time-name="5362d186-0a95-410e-b44e-b08243c2631a" msprop:DbColumnName="Fiscal_Half_Year_Of_Year_Name" msprop:FriendlyName="Fiscal_Half_Year_Of_Year_Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Crime_DimCity" />
+          <xs:field xpath="CityID" />
+        </xs:unique>
+        <xs:unique name="Crime_DimDate_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Crime_DimDate" />
+          <xs:field xpath="YearID" />
+        </xs:unique>
+        <xs:unique name="Crime_DimState_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Crime_DimState" />
+          <xs:field xpath="StateID" />
+        </xs:unique>
+        <xs:unique name="Crime_FactCrime_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Crime_FactCrime" />
+          <xs:field xpath="CrimeID" />
+        </xs:unique>
+        <xs:unique name="dbo_Time_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Time" />
+          <xs:field xpath="PK_Date" />
+        </xs:unique>
+        <xs:keyref name="FK_CityID" refer="Constraint1">
+          <xs:selector xpath=".//Crime_FactCrime" />
+          <xs:field xpath="CityID" />
+        </xs:keyref>
+        <xs:keyref name="FK_YearID" refer="Crime_DimDate_Constraint1">
+          <xs:selector xpath=".//Crime_FactCrime" />
+          <xs:field xpath="YearID" />
+        </xs:keyref>
+        <xs:keyref name="FK_StateID" refer="Crime_DimState_Constraint1">
+          <xs:selector xpath=".//Crime_DimCity" />
+          <xs:field xpath="StateID" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <CrimeDSV xmlns="" />
+  </Schema>
+</DataSourceView>

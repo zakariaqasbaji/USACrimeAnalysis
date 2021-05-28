@@ -1,0 +1,869 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="797c9ccf-5fdb-441e-9a09-8118288cd5a5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Crime</ID>
+  <Name>Crime</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="18" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-13737" scrolltop="4560" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="38444" y="16828" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactCrime" left="5562" top="13949" logicalid="9" controlid="1" masterid="0" hint1="0" hint2="0" width="5821" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000bd16000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Crime_FactCrime" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimState" left="20" top="17402" logicalid="10" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Crime_DimState" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Time" left="14240" top="13512" logicalid="11" controlid="3" masterid="0" hint1="0" hint2="0" width="5768" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00008816000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Time" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimCity" left="20" top="12700" logicalid="12" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Crime_DimCity" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimDate" left="6637" top="9000" logicalid="13" controlid="5" masterid="0" hint1="0" hint2="0" width="3387" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00003b0d0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Crime_DimDate" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="6831" top="10803" logicalid="14" controlid="6" masterid="0" hint1="0" hint2="0" width="841" height="3446" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_YearID]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="1" sourceattachpoint="1" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7230" y="11302" />
+              <point x="7230" y="12378" />
+              <point x="7372" y="12378" />
+              <point x="7372" y="13949" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2720" top="13452" logicalid="15" controlid="7" masterid="0" hint1="0" hint2="0" width="3142" height="3297" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_CityID]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="1" sourceattachpoint="13" destattachpoint="30" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3020" y="13851" />
+              <point x="4220" y="13851" />
+              <point x="4220" y="16449" />
+              <point x="5562" y="16449" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1121" top="14702" logicalid="16" controlid="8" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_StateID]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="4" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1520" y="17402" />
+              <point x="1520" y="15002" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-13737</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>4560</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>9000</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="79be1da6-8ea1-4f94-be62-84ec0f345c2d">
+      <ID>Time</ID>
+      <Name>Time</Name>
+      <DimensionID>Time</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4928aff9-e3aa-4e71-aa0e-6ddb929a6076">
+          <AttributeID>PK Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4f004813-0285-4f71-a418-fa9e82178c20">
+          <AttributeID>Date Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="45001f8f-ea17-47d0-a788-57ebfe6f23ff">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e4c24b3f-de0f-49c4-b3d1-2f3abdbc48f0">
+          <AttributeID>Year Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="601c897a-9853-4fd1-a8a9-036fe2f92dfe">
+          <AttributeID>Half Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9421ffef-5c00-4d5c-9c10-585135520b69">
+          <AttributeID>Half Year Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="97d042b0-4122-41fc-93c8-2c52b0a68ca7">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e338f478-3eac-46e0-9421-534bc01ce3b0">
+          <AttributeID>Quarter Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1991a10c-9345-44a3-977e-94c3aaa4515b">
+          <AttributeID>Day Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c575bfdc-d7f5-4f5f-9339-b11c813078e5">
+          <AttributeID>Day Of Year Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4697cd3f-4eea-423d-85b4-2a8c65c65d05">
+          <AttributeID>Day Of Half Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="57e99fe8-1954-45bf-8bd8-452170502b8c">
+          <AttributeID>Day Of Half Year Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="99b7ccdb-5df4-4d25-bb40-7b243a58aeb3">
+          <AttributeID>Day Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d78d89f8-18d5-457a-8d29-ad1b8e1279ac">
+          <AttributeID>Day Of Quarter Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9367272b-ef93-4a0f-9b2b-b7b48b2cd5d8">
+          <AttributeID>Quarter Of Year</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b9c60821-178d-48fe-988e-9037b6f8000a">
+      <ID>Dim Date</ID>
+      <Name>Dim Date</Name>
+      <DimensionID>Dim Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ad6ce3c1-efe5-4a3d-b1eb-4a237cdb7d73">
+          <AttributeID>Year ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e947909c-1ed7-46b9-ad01-027d395ac258">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="54f1bf70-ea49-473e-af1a-74fd5ec10338">
+          <AttributeID>Chinese New Year</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="3f3a862c-99f6-4cac-bcdb-2782d7a49e11">
+      <ID>Dim City</ID>
+      <Name>Dim City</Name>
+      <DimensionID>Dim City</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d125e21d-e53f-4c43-82e0-10c422cdb74f">
+          <AttributeID>City ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="95230c90-7413-40f5-ab1b-5de0f734d73b">
+          <AttributeID>State ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="59c6d4a2-fa1f-47c1-aadc-95cd1d0d3ec6">
+          <AttributeID>City</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="93ce6863-246d-4175-ac4d-625540cae4e2">
+      <ID>Dim State</ID>
+      <Name>Dim State</Name>
+      <DimensionID>Dim State</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f4b41391-4955-4384-ba8e-7053f682cda8">
+          <AttributeID>State ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="45590122-1ec4-42f8-b552-65c9758c22c1">
+          <AttributeID>State</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="336e743d-e516-423b-84cc-f3e105920f27">
+      <ID>Dim City - State</ID>
+      <Name>Dim City - State</Name>
+      <DimensionID>Dim State</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f16f8f52-bf7a-4ea4-a700-8fde062bd2a5">
+          <AttributeID>State ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2442c45d-f8f6-44a6-b6fb-269bf6b200d5">
+          <AttributeID>State</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="e74c7a68-e474-4c2d-8b92-d23e82aaf3ff">
+      <ID>Time</ID>
+      <Name>Time</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="ce8f87d9-3a10-4f20-932d-27e9ead0fbf0">
+          <ID>Day Of Year</ID>
+          <Name>Day Of Year</Name>
+          <Source dwd:design-time-name="1acf1451-40da-4e78-80a2-0521c2fff764">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6539f3ef-4f3f-405d-81da-6886138945c1">
+              <TableID>dbo_Time</TableID>
+              <ColumnID>Day_Of_Year</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="bd921462-66c8-4b86-a303-09d3a2b246c4">
+          <ID>Day Of Half Year</ID>
+          <Name>Day Of Half Year</Name>
+          <Source dwd:design-time-name="5c54325d-a9ba-4edf-9d45-0bd4cb28e06a">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="40eafbda-12e4-477f-bfc4-3acea51a83a5">
+              <TableID>dbo_Time</TableID>
+              <ColumnID>Day_Of_Year</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="06f49ca6-7abe-412a-b425-6ad9cd5886b8">
+          <ID>Day Of Quarter</ID>
+          <Name>Day Of Quarter</Name>
+          <Source dwd:design-time-name="991321fb-5755-4ad7-822a-48efaf149385">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="733d6a08-beb7-43d0-bcdb-8862308da56a">
+              <TableID>dbo_Time</TableID>
+              <ColumnID>Day_Of_Year</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="26a7982e-fd31-42d8-b5af-496f7f2e5834">
+          <ID>Quarter Of Year</ID>
+          <Name>Quarter Of Year</Name>
+          <Source dwd:design-time-name="5f569b41-71cc-46e3-ad15-200efcbebf5f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8e7b6478-f37a-4ab1-a0e6-9e0242ee0e89">
+              <TableID>dbo_Time</TableID>
+              <ColumnID>Quarter_Of_Year</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="20fbeb92-cac7-4a3d-aa7c-d4e7d902b74d">
+          <ID>Quarter Of Half Year</ID>
+          <Name>Quarter Of Half Year</Name>
+          <Source dwd:design-time-name="6907371e-7d93-4b77-87be-2e359d0033b8">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8c19a1da-5eea-4a07-a409-9798e89acc5b">
+              <TableID>dbo_Time</TableID>
+              <ColumnID>Quarter_Of_Half_Year</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5ea7b621-4803-4449-adb8-7043b9fcb254">
+          <ID>Half Year Of Year</ID>
+          <Name>Half Year Of Year</Name>
+          <Source dwd:design-time-name="0ca93a20-debe-401e-86e9-9dd7fe9a6877">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e903352f-a584-4f2a-bb98-34ad90fd2c66">
+              <TableID>dbo_Time</TableID>
+              <ColumnID>Half_Year_Of_Year</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a5aaf927-ddc3-4e8b-9b31-7dc6f6088c0f">
+          <ID>Fiscal Day Of Year</ID>
+          <Name>Fiscal Day Of Year</Name>
+          <Source dwd:design-time-name="59be6cb1-3ae3-4868-bc96-4f00d1bc3c72">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d9e9eaf7-1ada-4807-bdda-14ca761dbd61">
+              <TableID>dbo_Time</TableID>
+              <ColumnID>Fiscal_Day_Of_Year</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="81fd29ed-0c47-4776-8d7b-01cbf07ea302">
+          <ID>Fiscal Day Of Half Year</ID>
+          <Name>Fiscal Day Of Half Year</Name>
+          <Source dwd:design-time-name="09a516c3-8ed1-4220-bafa-6c380000713a">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="70dd5b43-33b9-4d6e-ab76-60880054950c">
+              <TableID>dbo_Time</TableID>
+              <ColumnID>Fiscal_Day_Of_Half_Year</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="980bfba5-cbd8-45d5-b5ea-836ac86d5c66">
+          <ID>Fiscal Day Of Quarter</ID>
+          <Name>Fiscal Day Of Quarter</Name>
+          <Source dwd:design-time-name="65d9d458-7eeb-4b61-99ec-5391ae0d4e3f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="93335cbe-5292-4f04-ab1a-90a05a792fe3">
+              <TableID>dbo_Time</TableID>
+              <ColumnID>Fiscal_Day_Of_Quarter</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="840d9c45-5fa6-4029-b05a-66ac62a8ec5b">
+          <ID>Fiscal Quarter Of Year</ID>
+          <Name>Fiscal Quarter Of Year</Name>
+          <Source dwd:design-time-name="62cf62dc-bb83-4b71-9a34-3efbf0113b88">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="dcd955e0-1f87-42b4-8880-4c8a491cbc71">
+              <TableID>dbo_Time</TableID>
+              <ColumnID>Fiscal_Quarter_Of_Year</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="92325bbf-ce85-4841-86d2-95330e3ebd3c">
+          <ID>Fiscal Quarter Of Half Year</ID>
+          <Name>Fiscal Quarter Of Half Year</Name>
+          <Source dwd:design-time-name="c8d1c8af-e88f-420d-a971-556e51eafd64">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7451e854-b92f-4421-a299-539c2959b20b">
+              <TableID>dbo_Time</TableID>
+              <ColumnID>Fiscal_Quarter_Of_Half_Year</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="426f314a-0752-4230-91a0-0a2f9faeab8b">
+          <ID>Fiscal Half Year Of Year</ID>
+          <Name>Fiscal Half Year Of Year</Name>
+          <Source dwd:design-time-name="9f39fa5c-24db-4578-89a7-e85bdead41d8">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ab406634-2b04-41a5-b8a2-10a657b73202">
+              <TableID>dbo_Time</TableID>
+              <ColumnID>Fiscal_Half_Year_Of_Year</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b9bd765a-62e9-42c6-863c-86da41f6862d">
+          <ID>Time Count</ID>
+          <Name>Time Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="ea890361-7f7a-4e00-adeb-7fb291fa6660">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="554caded-92f0-45ba-ab67-8a3f69aaf01f">
+              <TableID>dbo_Time</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="d29afdcc-58c4-40df-96f9-e23849f17843">
+          <CubeDimensionID>Time</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="38baf48d-ea6b-4f6f-a3cb-fae4fb8193b9">
+              <AttributeID>PK Date</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="248f50fa-cedf-4932-8d76-648ef3e5820d">
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="eed7555c-f572-4a65-83d8-b7762abd41cb">
+                    <TableID>dbo_Time</TableID>
+                    <ColumnID>PK_Date</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="4bf0d887-1d28-48ba-a6f4-4a9b3a1b646a">
+      <ID>Fact Crime</ID>
+      <Name>Fact Crime</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="471c6df2-3ea1-4666-bb2e-ccbd81573cc2">
+          <ID>Source Row ID</ID>
+          <Name>Source Row ID</Name>
+          <Source dwd:design-time-name="d162874d-05e5-4f86-88cf-8f226d121a47">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7db90986-8bb5-402d-b658-c04e07d84a51">
+              <TableID>Crime_FactCrime</TableID>
+              <ColumnID>Source_RowID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ca8fb2f5-3fcd-4744-865c-ba857cbe3c6b">
+          <ID>Population</ID>
+          <Name>Population</Name>
+          <Source dwd:design-time-name="955b0008-d0aa-4693-b223-fb8ea31b0b9a">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="92f86cc7-a513-4923-915a-15a3957bff84">
+              <TableID>Crime_FactCrime</TableID>
+              <ColumnID>Population</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b694b02e-aaca-4dd3-80ea-e0c10da1f067">
+          <ID>Violent Crime</ID>
+          <Name>Violent Crime</Name>
+          <Source dwd:design-time-name="129b09ef-5917-4eec-84a1-f845c7cda07b">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="673c6599-d9b6-4e1d-a9cb-d510ffb1f28a">
+              <TableID>Crime_FactCrime</TableID>
+              <ColumnID>Source_RowID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9adbc921-1db9-40d5-a164-4e9d2e9e1f4b">
+          <ID>Murder And Non Egligent Manslaughter</ID>
+          <Name>Murder And Non Egligent Manslaughter</Name>
+          <Source dwd:design-time-name="54d6d722-bcdb-4da5-a0cf-d7d7f42e68ea">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="915a7c4f-2225-4724-b7a5-cfbf00a086a7">
+              <TableID>Crime_FactCrime</TableID>
+              <ColumnID>Source_RowID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="181fb5ce-4af0-4e08-a576-2609833faa10">
+          <ID>Forcible Rape</ID>
+          <Name>Forcible Rape</Name>
+          <Source dwd:design-time-name="4bee1fcd-5247-4ed8-8609-93087417b269">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f42ff47a-952e-4abf-a57d-9198c6b17a05">
+              <TableID>Crime_FactCrime</TableID>
+              <ColumnID>Source_RowID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d6cdcdf0-b0e3-4480-ba79-1819c4ce9d98">
+          <ID>Robbery</ID>
+          <Name>Robbery</Name>
+          <Source dwd:design-time-name="ea559cb6-20ef-45c5-a877-34df736a41ea">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b36f4d20-7eaa-451a-be98-5538c5a9f19e">
+              <TableID>Crime_FactCrime</TableID>
+              <ColumnID>Source_RowID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="2a2a3d87-f3c1-4170-b978-2b79b9a06d7c">
+          <ID>Aggravated Assault</ID>
+          <Name>Aggravated Assault</Name>
+          <Source dwd:design-time-name="1f9a15ae-c461-4e7a-9784-20fac9307ff0">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="95184453-f88a-4ff2-8f1c-9cc076f3fb1f">
+              <TableID>Crime_FactCrime</TableID>
+              <ColumnID>AggravatedAssault</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9d43c930-0d2e-407f-b472-ca26a0a1b254">
+          <ID>Property Crime</ID>
+          <Name>Property Crime</Name>
+          <Source dwd:design-time-name="32d6babc-679a-4719-a7e1-85a81d463425">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fdb14cc4-7111-4096-bc3b-07cdc952ba75">
+              <TableID>Crime_FactCrime</TableID>
+              <ColumnID>PropertyCrime</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5cae187d-2cc9-4d96-aa39-803bdb4e1e79">
+          <ID>Buglary</ID>
+          <Name>Buglary</Name>
+          <Source dwd:design-time-name="272f9302-c546-44e9-a280-22720510094e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="248f3f6b-ad4b-488c-a9ea-60e416a6d7e8">
+              <TableID>Crime_FactCrime</TableID>
+              <ColumnID>Source_RowID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f4dc0760-c8e9-44f8-9be7-4236eb7a1e87">
+          <ID>Larceny Theft</ID>
+          <Name>Larceny Theft</Name>
+          <Source dwd:design-time-name="a3ac7e8e-9b44-4c3e-ae64-388cb22167c8">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e5f276ff-67d7-4154-8b53-ecbcad69b82e">
+              <TableID>Crime_FactCrime</TableID>
+              <ColumnID>Source_RowID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f9626130-b302-4d60-adf4-6dca68739c88">
+          <ID>Motor Vehicle Theft</ID>
+          <Name>Motor Vehicle Theft</Name>
+          <Source dwd:design-time-name="c51b49d3-8b73-44d1-aeea-eaf3e046f633">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a03efbee-43f5-4599-86b0-475d7cc2b03b">
+              <TableID>Crime_FactCrime</TableID>
+              <ColumnID>Source_RowID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7eb0ca8c-fd47-4b01-ad28-75237b3d6b60">
+          <ID>Arson</ID>
+          <Name>Arson</Name>
+          <Source dwd:design-time-name="7572e59e-d5f2-4f24-b7be-ea27514d1dc5">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4ed43e2e-ec86-44e1-ab88-e8cd3143e99b">
+              <TableID>Crime_FactCrime</TableID>
+              <ColumnID>Source_RowID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="2d75e7d4-80f5-4baa-8985-28a9267b4baa">
+          <ID>Fact Crime Count</ID>
+          <Name>Fact Crime Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="09397c53-a37c-4b22-ab39-bbc1bb2b13e4">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="e7f48e97-7372-441f-bf3d-0182374c7dfb">
+              <TableID>Crime_FactCrime</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3813591d-8e8f-49ca-9d2e-1fe3b62413fb">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="76ba8b53-64b4-4f0c-bbaa-4b3baba36d8e">
+              <AttributeID>Year ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ceb7e65d-8c27-4398-97f2-05f7258a27c5">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cd6aa3dc-bf6c-4db2-ade5-592b0d3baad4">
+                    <TableID>Crime_FactCrime</TableID>
+                    <ColumnID>YearID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c3b25b50-86cc-4995-8ef4-953889201205">
+          <CubeDimensionID>Dim City</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c6a61978-07cf-4e7a-87f8-05e33346518d">
+              <AttributeID>City ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0025ce79-89f3-4a52-85c6-bdd7898c6b4d">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="dbb50441-6716-4e68-bd2a-f38d844f95d1">
+                    <TableID>Crime_FactCrime</TableID>
+                    <ColumnID>CityID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="b8f40246-6d3e-40b1-801d-3fb6562cf99a">
+          <CubeDimensionID>Dim State</CubeDimensionID>
+          <MeasureGroupID>Dim City</MeasureGroupID>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="3200acda-6523-4a93-8ce7-1dd5e56ba808">
+          <CubeDimensionID>Dim City - State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="410593b5-9fac-4ec8-b661-b90a8724ecf0">
+              <AttributeID>State ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Dim City</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>State ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="07726773-2012-4ad9-ae19-ad228f6b08a5">
+      <ID>Dim State</ID>
+      <Name>Dim State</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="a6eb6369-c28d-4bac-9608-518abe23002e">
+          <ID>Dim State Count</ID>
+          <Name>Dim State Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="ebc9b099-b316-4b06-90ee-ec63a171fc1f">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="258d1079-aac1-4f26-ab91-da9e87230269">
+              <TableID>Crime_DimState</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="bd3cdc45-c270-44c8-b1c7-dfb4f1072cb9">
+          <CubeDimensionID>Dim State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="72591057-61bc-4faf-911b-2afdd2dd911b">
+              <AttributeID>State ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="655dbd75-271b-4e8a-a7e7-056b402e1c70">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cf5ce747-d80b-4015-a85c-b116202ca369">
+                    <TableID>Crime_DimState</TableID>
+                    <ColumnID>StateID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="f89cc41b-7cce-4908-9c29-6f9191c5dd1f">
+          <CubeDimensionID>Dim City</CubeDimensionID>
+          <MeasureGroupID>Dim City</MeasureGroupID>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="9c1c370f-ba37-40bd-a18f-6673286740a1">
+          <CubeDimensionID>Dim City - State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="db7fcaf2-bea7-4432-afdc-50524525c04e">
+              <AttributeID>State ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6ecd8f6b-60e8-43af-b432-ca44b94a05cf">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b02a7f44-7529-4f2f-8203-545e87199ebf">
+                    <TableID>Crime_DimState</TableID>
+                    <ColumnID>StateID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="7296dc83-c754-4f83-800b-40bbdb318059">
+      <ID>Dim Date</ID>
+      <Name>Dim Date</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="7a36c712-c412-4f39-ae40-d1373fa1e514">
+          <ID>Year</ID>
+          <Name>Year</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="2de7e100-305b-495a-a9cf-e85d09943cab">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="a8bf1136-cbf9-4c18-aa7f-e7373a635930">
+              <TableID>Crime_DimDate</TableID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c3c6ffc4-fa7d-4d85-97ae-d1b5d3b0419f">
+          <ID>Dim Date Count</ID>
+          <Name>Dim Date Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="617cb42a-2f2b-4d97-a199-ad0ae28b03b2">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="3b3c74dc-1416-4d23-8ec7-895945e21604">
+              <TableID>Crime_DimDate</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="1e34a9df-8994-4edb-8b99-9aff56ae5aba">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a8cedc2b-0a63-417f-a042-05d2713644ec">
+              <AttributeID>Year ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="957b43ae-2d73-4158-9aa9-7eafe993699f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f7f9abf8-35d6-49fe-8acc-50a149a4a0f1">
+                    <TableID>Crime_DimDate</TableID>
+                    <ColumnID>YearID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="555f1a65-110c-4981-84a2-78c4d208390c">
+      <ID>Dim City</ID>
+      <Name>Dim City</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="cf8e2744-343d-496a-9462-831032437cab">
+          <ID>Dim City Count</ID>
+          <Name>Dim City Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="5373aa28-15fc-44ea-a379-3f122097524d">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="c159fa3b-0343-4a97-9204-4183b0790013">
+              <TableID>Crime_DimCity</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="76450552-1fc4-44a7-b3f5-7d7799c7a7c1">
+          <CubeDimensionID>Dim City</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b2a1e936-27ba-4f1e-9a69-c2dc62765be3">
+              <AttributeID>City ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="40c0a471-6e58-4966-ae46-36d9d0617ce4">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="62f5c520-ece3-4e87-abc4-b9d94cd1fee5">
+                    <TableID>Crime_DimCity</TableID>
+                    <ColumnID>CityID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f163f571-243c-4acb-98c1-ef4c8b9ba545">
+          <CubeDimensionID>Dim State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b561eb24-e9c8-4731-9b90-54f05fba11ee">
+              <AttributeID>State ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8a156d7c-5fa7-45c6-b662-691bb53e4cc0">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6246f0fd-88b4-4d78-9095-db728851fc3f">
+                    <TableID>Crime_DimCity</TableID>
+                    <ColumnID>StateID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="0ef66880-ceb0-4b80-bbd6-55d425a21054">
+    <DataSourceViewID>Crime</DataSourceViewID>
+  </Source>
+</Cube>
